@@ -1,4 +1,4 @@
-afkTimer = Config.AfkTimer * 10
+afkTimer = Config.AfkTimer * 60
 
 AfkTime = 0
 IsAfk = false
