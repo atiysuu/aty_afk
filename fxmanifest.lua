@@ -4,11 +4,10 @@ author 'atiysu'
 lua54 'yes'
 discord 'https://discord.gg/dvPMYsRFNx'
 
-shared_scripts{
-  "shared/*.lua",
+shared_scripts {
+  'config/config.lua'
 }
 
 client_scripts {
-  "client/utils.lua",
-  "client/*.lua",
+  "client/*.lua"
 }
