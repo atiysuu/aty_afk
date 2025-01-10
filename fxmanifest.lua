@@ -5,7 +5,7 @@ lua54 'yes'
 discord 'https://discord.gg/dvPMYsRFNx'
 
 shared_scripts {
-  'config/config.lua'
+  'shared/config.lua'
 }
 
 client_scripts {
