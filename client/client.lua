@@ -98,6 +98,11 @@ function StartAFKAnimation()
         CreateThread(function()
             while true do
                 if not camera then break end
+                        
+                 for i = 0, 1.0, 1.0 do
+                    DrawRect(0.0, 0.0, 2.0, 0.2, 0, 0, 0, 255)
+                    DrawRect(0.0, i, 2.0, 0.2, 0, 0, 0, 255)
+                end
 
                 angle = angle + 0.05
                 if angle >= 360.0 then
