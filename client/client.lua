@@ -117,7 +117,14 @@ function StartAFKAnimation()
                 PointCamAtCoord(camera, pedCoords.x, pedCoords.y, pedCoords.z)
 
                 -- Exit AFK on player input
-                if IsControlPressed(0, 1) or IsControlPressed(0, 2) or IsControlPressed(0, 3) or IsControlPressed(0, 4) then
+                if IsControlPressed(0, 32) or  -- 'W' key (keyCode = 32)
+                   IsControlPressed(0, 33) or  -- 'S' key (keyCode = 33)
+                   IsControlPressed(0, 34) or  -- 'A' key (keyCode = 34)
+                   IsControlPressed(0, 35) or  -- 'D' key (keyCode = 35)
+                   IsControlPressed(0, 1) or   -- MOUSE RIGHT key (keyCode = 1)
+                   IsControlPressed(0, 2) or   -- MOUSE DOWN key (keyCode = 2)
+                   IsControlPressed(0, 3) or   -- '3' key (keyCode = 3)
+                   IsControlPressed(0, 4) then -- MOUSE DOWN key (keyCode = 4)
                     AfkTime = 0
                     IsAfk = false
                     StopAFKAnimation()
