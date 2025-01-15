@@ -11,22 +11,9 @@ games {
 
 shared_scripts{
   "shared/*.lua",
+  '@ox_lib/init.lua',
 }
 
 client_scripts {
-  "client/utils.lua",
   "client/*.lua",
 }
-
-local isEscrowed = false
-if isEscrowed then
-  escrow_ignore {
-    "shared/*.lua",
-    "client/open.lua",
-  }
-else
-  escrow_ignore {
-    "shared/*.lua",
-    "client/**/*",
-  }
-end
