@@ -117,7 +117,7 @@ function StartAFKAnimation()
                 PointCamAtCoord(camera, pedCoords.x, pedCoords.y, pedCoords.z)
 
                 -- Exit AFK on player input
-                if IsControlJustPressed(0, 1) or IsControlJustPressed(0, 2) or IsControlJustPressed(0, 3) or IsControlJustPressed(0, 4) then
+                if IsControlPressed(0, 1) or IsControlPressed(0, 2) or IsControlPressed(0, 3) or IsControlPressed(0, 4) then
                     AfkTime = 0
                     IsAfk = false
                     StopAFKAnimation()
