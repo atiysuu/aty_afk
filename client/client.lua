@@ -60,8 +60,7 @@ function StartAFKAnimation()
         while not IsScreenFadedOut() do Wait(0) end
 
         local ped = PlayerPedId()
-        ClearPedTasksImmediately(ped)
-
+  
         local inVehicle = IsPedInAnyVehicle(ped, false)
         if inVehicle then
             TaskStartScenarioInPlace(ped, "WORLD_HUMAN_DRIVER", 0, true)
